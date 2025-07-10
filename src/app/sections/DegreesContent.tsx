@@ -4,7 +4,7 @@ import { Avatar } from 'primereact/avatar';
 import { Badge } from 'primereact/badge';
 
 export default function DegreesContent() {
-  const [activeIndex, setActiveIndex] = useState([0, 1]);
+  const [activeIndex, setActiveIndex] = useState<number[]>([0, 1]);
 
   return (
     <div
@@ -13,7 +13,7 @@ export default function DegreesContent() {
     <div className="card" style={{ width: '90%', maxWidth: 1000 }}>
         <Accordion
         activeIndex={activeIndex}
-        onTabChange={e => setActiveIndex(e.index)}
+        onTabChange={(e) => setActiveIndex(Array.isArray(e.index) ? e.index : [e.index])}
         className="bg-gray-800 text-900 border-round"
         >
         <AccordionTab
