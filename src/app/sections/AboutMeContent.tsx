@@ -1,5 +1,5 @@
 import { Card } from 'primereact/card';
-import { Image } from 'primereact/image';
+import Image from 'next/image';
 
 export default function AboutMeContent() {
   return (
