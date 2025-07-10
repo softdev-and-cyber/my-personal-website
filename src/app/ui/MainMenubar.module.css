@@ -1,0 +1,61 @@
+.menubarContainer {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Menubar de base */
+.menubarContainer :global(.p-menubar) {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Listes du menu */
+.menubarContainer :global(.p-menu-list),
+.menubarContainer :global(.p-submenu-list) {
+  background: transparent !important;
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+}
+
+/* Items du menu */
+.menubarContainer :global(.p-menuitem),
+.menubarContainer :global(.p-menuitem-link),
+.menubarContainer :global(.p-menuitem-content) {
+  background: transparent !important;
+  box-shadow: none !important;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+/* Texte, icônes et flèches */
+.menubarContainer :global(.p-menuitem-text),
+.menubarContainer :global(.p-menuitem-icon),
+.menubarContainer :global(.p-submenu-icon) {
+  color: whitesmoke !important;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Hover / Focus / Active : uniquement changement de couleur */
+.menubarContainer :global(.p-menuitem:hover),
+.menubarContainer :global(.p-menuitem-link:hover),
+.menubarContainer :global(.p-menuitem-content:hover),
+.menubarContainer :global(.p-menuitem-link:focus),
+.menubarContainer :global(.p-menuitem-link:active),
+.menubarContainer :global(.p-menuitem-content:focus),
+.menubarContainer :global(.p-menuitem-content:active) {
+  background: transparent !important;
+}
+
+.menubarContainer :global(.p-menuitem:hover .p-menuitem-text),
+.menubarContainer :global(.p-menuitem:hover .p-menuitem-icon),
+.menubarContainer :global(.p-menuitem:hover .p-submenu-icon),
+.menubarContainer :global(.p-menuitem-link:hover .p-menuitem-text),
+.menubarContainer :global(.p-menuitem-link:hover .p-menuitem-icon),
+.menubarContainer :global(.p-menuitem-link:hover .p-submenu-icon),
+.menubarContainer :global(.p-menuitem-content:hover .p-menuitem-text),
+.menubarContainer :global(.p-menuitem-content:hover .p-menuitem-icon),
+.menubarContainer :global(.p-menuitem-content:hover .p-submenu-icon),
+.menubarContainer :global(.p-menuitem-link:focus .p-menuitem-text),
+.menubarContainer :global(.p-menuitem-link:active .p-menuitem-text) {
+  color: white !important;
+}
