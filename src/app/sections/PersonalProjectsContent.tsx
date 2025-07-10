@@ -2,6 +2,7 @@ import React from 'react';
 import { Card } from 'primereact/card';
 import { Button } from 'primereact/button';
 import { allProjects } from '@/data/allProjects';
+import Image from 'next/image';
 
 export default function PersonalProjectsContent() {
   return (
@@ -12,7 +13,7 @@ export default function PersonalProjectsContent() {
             <Card
               title={project.label}
               subTitle={project.subtitle}
-              header={<img alt={project.label} src={project.image} />}
+              header={<Image alt={project.label} src={project.image} />}
               footer={
                 <a href={project.link} target="_blank" rel="noopener noreferrer">
                   <Button label="Go to project" icon="pi pi-arrow-up-right" />

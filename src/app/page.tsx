@@ -2,7 +2,6 @@
 
 // composables & utils
 import { 
-  useRef, 
   useState, 
   useEffect 
 } from "react";
@@ -23,17 +22,11 @@ import { allProjects } from "@/data/allProjects";
 // animations
 import {
     motion,
-    MotionValue,
-    useScroll,
-    useSpring,
-    useTransform,
     AnimatePresence,
 } from "motion/react";
 
 // fonts
 import { 
-  geistSans, 
-  geistMono, 
   calSans, 
   inter 
 } from '@/app/ui/fonts';

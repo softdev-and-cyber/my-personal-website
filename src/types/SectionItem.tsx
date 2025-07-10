@@ -1,5 +1,3 @@
-import type { ReactNode, FC } from "react";
-
 // raw data only
 export interface SectionItemBase {
   label: string;

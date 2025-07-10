@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import styles from "@/app/ui/ScrollSections.module.css";
 import { SectionItem } from "@/types/SectionItem";
 import { strToHtmlId } from "@/lib/stringUtils";
-import { calSans, birthstone } from "@/app/ui/fonts";
+import { birthstone } from "@/app/ui/fonts";
 
 interface ScrollSectionsProps {
   allSections: SectionItem[];

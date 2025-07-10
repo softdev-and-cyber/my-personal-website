@@ -5,7 +5,7 @@ import ContactContent from "@/app/sections/ContactContent";
 import PersonalProjectsContent from "@/app/sections/PersonalProjectsContent";
 import ProfessionalExperienceContent from "@/app/sections/ProfessionalExperienceContent";
 import AboutMeContent from "@/app/sections/AboutMeContent";
-import { SectionItem, SectionItemBase } from "@/types/SectionItem";
+import { SectionItemBase } from "@/types/SectionItem";
 
 export const rawSections: SectionItemBase[] = [
   { 

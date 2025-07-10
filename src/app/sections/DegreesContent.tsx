@@ -20,7 +20,7 @@ export default function DegreesContent() {
             header={
             <span className="text-900 flex align-items-center gap-2 w-full">
                 <Avatar image="/img/ecole2600_logo.png" shape="square" />
-                <span className="font-bold white-space-nowrap">Master's in Cybersecurity</span>
+                <span className="font-bold white-space-nowrap">Master&aposs in Cybersecurity</span>
                 <Badge value="2022-2025" severity="info" className="ml-auto" />
             </span>
             }

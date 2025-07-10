@@ -84,7 +84,7 @@ export default function ProfessionalExperienceContent() {
                 <ul className="mb-2">
                     <li className="mb-2">
                       <span className="card-sub-menu">Enhanced the security configurator: </span>
-                      added new features with formulas & VBA, gathered needs and feedback, reviewed Renault's cybersecurity requirements, documented the tool, and trained international colleagues.<br />
+                      added new features with formulas & VBA, gathered needs and feedback, reviewed Renault&aposs cybersecurity requirements, documented the tool, and trained international colleagues.<br />
                       📈 Impact: this tool handle cybersecurity req. for 400+ projects/year at Renault Group.
                     </li>
                 </ul>

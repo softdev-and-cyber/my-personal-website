@@ -4,7 +4,7 @@ import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css';
 import "./globals.css";
 
-import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
+import { PrimeReactProvider } from 'primereact/api';
 
 export default function RootLayout({
   children,
