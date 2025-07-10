@@ -62,7 +62,6 @@ export default function App() {
               const safeId = strToHtmlId(s.label);
               return safeId === entry.target.id;
             });
-            const newColor = section ? section.color : defaultSection.color;
             if (section) {
               setActiveSection(section);
             }
