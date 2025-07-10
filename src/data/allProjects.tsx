@@ -1,4 +1,6 @@
-export const allProjects = [
+import { ProjectItem } from "@/types/ProjectItem";
+
+export const allProjects: ProjectItem[] = [
     {
         label: 'SOS Phishing',
         icon: 'pi pi-shield',
