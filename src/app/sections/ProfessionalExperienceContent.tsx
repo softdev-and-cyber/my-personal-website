@@ -4,7 +4,7 @@ import { Avatar } from 'primereact/avatar';
 import { Badge } from 'primereact/badge';
 
 export default function ProfessionalExperienceContent() {
-  const [activeIndex, setActiveIndex] = useState<number[]>([0, 1]);
+  const [activeIndex, setActiveIndex] = useState<number[]>([]);
 
   return (
     <div
@@ -12,6 +12,7 @@ export default function ProfessionalExperienceContent() {
     >
     <div className="card" style={{ width: '90%', maxWidth: 1000 }}>
         <Accordion
+        multiple
         activeIndex={activeIndex}
         onTabChange={(e) => setActiveIndex(Array.isArray(e.index) ? e.index : [e.index])}
         className="bg-gray-800 text-900 border-round"
@@ -84,7 +85,7 @@ export default function ProfessionalExperienceContent() {
                 <ul className="mb-2">
                     <li className="mb-2">
                       <span className="card-sub-menu">Enhanced the security configurator: </span>
-                      added new features with formulas & VBA, gathered needs and feedback, reviewed Renault&aposs cybersecurity requirements, documented the tool, and trained international colleagues.<br />
+                      added new features with formulas & VBA, gathered needs and feedback, reviewed Renault&apos;s cybersecurity requirements, documented the tool, and trained international colleagues.<br />
                       📈 Impact: this tool handle cybersecurity req. for 400+ projects/year at Renault Group.
                     </li>
                 </ul>

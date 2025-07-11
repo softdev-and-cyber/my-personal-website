@@ -22,8 +22,8 @@ export const allProjects: ProjectItem[] = [
         icon: 'pi pi-globe',
         subtitle: 'Next.js / HTML5 / CSS3 / PrimeVue / PrimeFlex / Vercel',
         description: 'My personal website online.',
-        image: 'stub/personal_website.png',
-        link: 'https://example.com/pdf-generator'
+        image: '/stub/personal_website.png',
+        link: 'https://github.com/softdev-and-cyber/my-personal-website'
     },
     {
         label: 'My simple friendly win-rootkit',
@@ -45,7 +45,7 @@ export const allProjects: ProjectItem[] = [
         label: 'CryptUrMess',
         icon: 'pi pi-mobile',
         subtitle: 'Android / Java',
-        description: '2D video game created with Java FX in pairs as part of a supervised project',
+        description: 'Android school project for sending encrypted messages.',
         image: '/stub/crypturmess.png',
         link: 'https://github.com/Blarckest/CryptUrMess/blob/main'
     }

@@ -1,10 +1,12 @@
+'use client';
+
 import React, { useState } from 'react';
 import { Accordion, AccordionTab } from 'primereact/accordion';
 import { Avatar } from 'primereact/avatar';
 import { Badge } from 'primereact/badge';
 
 export default function DegreesContent() {
-  const [activeIndex, setActiveIndex] = useState<number[]>([0, 1]);
+  const [activeIndex, setActiveIndex] = useState<number[]>([]);
 
   return (
     <div
@@ -12,6 +14,7 @@ export default function DegreesContent() {
     >
     <div className="card" style={{ width: '90%', maxWidth: 1000 }}>
         <Accordion
+        multiple
         activeIndex={activeIndex}
         onTabChange={(e) => setActiveIndex(Array.isArray(e.index) ? e.index : [e.index])}
         className="bg-gray-800 text-900 border-round"
@@ -20,7 +23,7 @@ export default function DegreesContent() {
             header={
             <span className="text-900 flex align-items-center gap-2 w-full">
                 <Avatar image="/img/ecole2600_logo.png" shape="square" />
-                <span className="font-bold white-space-nowrap">Master&aposs in Cybersecurity</span>
+                <span className="font-bold white-space-nowrap">Master&apos;s in Cybersecurity</span>
                 <Badge value="2022-2025" severity="info" className="ml-auto" />
             </span>
             }
