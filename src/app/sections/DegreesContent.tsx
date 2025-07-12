@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import { Accordion, AccordionTab } from 'primereact/accordion';
 import { Avatar } from 'primereact/avatar';
 import { Badge } from 'primereact/badge';
-import CustomHeaderModal from '@/app/ui/CustomHeaderModal';
 
 export default function DegreesContent() {
   const [activeIndex, setActiveIndex] = useState<number[]>([]);
