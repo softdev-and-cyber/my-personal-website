@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import styles from "@/app/ui/ScrollIndicator.module.css";
 import { SectionItem } from "@/types/SectionItem";
 import { strToHtmlId } from "@/lib/stringUtils";
