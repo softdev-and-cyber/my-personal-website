@@ -91,10 +91,6 @@ export default function AboutMeContent() {
             thomas.devienne.pro@proton.me
           </li>
           <li>
-            <i className="pi pi-mobile mr-2" />
-            (+33) 7 44 90 53 73<br/>(Please leave a voicemail)
-          </li>
-          <li>
             <i className="pi pi-globe mr-2" />
             Native French, Professional English
           </li>

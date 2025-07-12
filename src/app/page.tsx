@@ -95,6 +95,9 @@ export default function App() {
       {/* Particules au-dessus du fond coloré */}
       <CustomParticules />
 
+      {/* Indicateur de scroll */}
+      <ScrollIndicator sections={allSections} activeSection={activeSection} />
+
       {/* Contenu au-dessus */}
       <section id="thomas-devienne" className="relative min-h-screen w-full flex flex-column justify-content-center align-items-center z-10" style={{ height: '90%' }}>
 
@@ -150,7 +153,6 @@ export default function App() {
           allSections={allSections.slice(1)}
         />
       </div>
-      <ScrollIndicator sections={allSections} />
 
     </div>
   );
