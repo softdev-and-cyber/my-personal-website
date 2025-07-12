@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next';
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
@@ -16,6 +17,7 @@ export default function RootLayout({
       <body>
         <PrimeReactProvider>
           {children}
+          <Analytics />
         </PrimeReactProvider>
       </body>
     </html>
