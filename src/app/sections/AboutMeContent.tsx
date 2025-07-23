@@ -6,8 +6,8 @@ export default function AboutMeContent() {
     <div className="grid justify-content-center gap-4 p-4 max-w-screen-lg m-auto">
       {/* HARD SKILLS */}
       <Card className="col-12 md:col-12 lg:col-4 line-height-3 text-black text-left">
-        <h3 className="mb-3 font-bold text-base">HARD SKILLS</h3>
-        <ul className="list-disc list-inside space-y-1">
+        <h3 className="mb-3 font-bold text-sm md:text-base">HARD SKILLS</h3>
+        <ul className="list-disc list-inside space-y-1 text-sm md:text-base">
           <li><strong>Dev:</strong> Python, C, Web (HTML5, CSS3, Javascript, PHP, Django, Nuxt.js), Bash, C++, C#, .NET, Java, PostgreSQL.</li>
           <li><strong>DevOps:</strong> Kubernetes, Gitlab, Docker.</li>
           <li><strong>Security:</strong> Web, Android & AD pentesting, malware dev (Windows), code audit & reverse engineering, EBIOS RM, BloodHound, Nmap, Burp.</li>
@@ -17,8 +17,8 @@ export default function AboutMeContent() {
 
       {/* SOFT SKILLS */}
       <Card className="col-12 md:col-12 lg:col-4 line-height-3 text-black text-left">
-        <h3 className="mb-3 font-bold text-base">SOFT SKILLS</h3>
-        <ul className="list-disc list-inside space-y-1">
+        <h3 className="mb-3 font-bold text-sm md:text-base">SOFT SKILLS</h3>
+        <ul className="list-disc list-inside space-y-1 text-sm md:text-base">
           <li>Proactive and motivated</li>
           <li>Team player (Agile, V-model, SAFe)</li>
           <li>Curious and eager to learn</li>
@@ -30,8 +30,8 @@ export default function AboutMeContent() {
 
       {/* MY TOOLS */}
       <Card className="col-12 md:col-12 lg:col-4 line-height-3 text-black text-left">
-        <h3 className="mb-3 font-bold text-base">MY TOOLS</h3>
-        <ul className="list-disc list-inside space-y-1">
+        <h3 className="mb-3 font-bold text-sm md:text-base">MY TOOLS</h3>
+        <ul className="list-disc list-inside space-y-1 text-sm md:text-base">
           <li>Docker, Kubernetes</li>
           <li>Visual Studio Code, Python</li>
           <li>OWASP Suite, ANSSI guidelines and NIST SP 800-218 (SSDF)</li>
@@ -41,7 +41,7 @@ export default function AboutMeContent() {
 
       {/* CYBER CERTIFICATIONS */}
       <Card className="col-12 md:col-12 lg:col-4 line-height-3 text-black text-left">
-        <h3 className="mb-3 font-bold text-base">CYBER CERTIFICATIONS</h3>
+        <h3 className="mb-3 font-bold text-sm md:text-base">CYBER CERTIFICATIONS</h3>
         <div className="flex flex-row items-start">
           <Image
             src="/img/dante_logo.png"
@@ -68,10 +68,10 @@ export default function AboutMeContent() {
 
       {/* INTERESTS */}
       <Card className="col-12 md:col-12 lg:col-4 line-height-3 text-black text-left">
-        <h3 className="mb-3 font-bold text-base flex items-center gap-2">
+        <h3 className="mb-3 font-bold text-sm md:text-base flex items-center gap-2">
           <i className="" /> INTERESTS
         </h3>
-        <ul className="list-disc list-inside space-y-1">
+        <ul className="list-disc list-inside space-y-1 text-sm md:text-base">
           <li>Contemporary theatre</li>
           <li>Photography</li>
           <li>Literature: science fiction, thrillers</li>
@@ -82,7 +82,7 @@ export default function AboutMeContent() {
 
       {/* CONTACT */}
       <Card className="col-12 md:col-12 lg:col-4 line-height-3 text-black text-left">
-        <h3 className="mb-3 font-bold text-base flex items-center gap-2">
+        <h3 className="mb-3 font-bold text-sm md:text-base flex items-center gap-2">
           <i className="" /> CONTACT
         </h3>
         <ul className="list-none list-inside space-y-1">

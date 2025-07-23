@@ -56,23 +56,24 @@ export default function App() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting && entry.target.id) {
-            const section = allSections.find(s => {
-              const safeId = strToHtmlId(s.label);
-              return safeId === entry.target.id;
-            });
-            if (section) {
-              setActiveSection(section);
-            }
+        const visibleHeaders = entries
+          .filter(entry => entry.isIntersecting && entry.target.id)
+          .map(entry => entry.target.id);
+
+        if (visibleHeaders.length === 1) {
+          const visibleId = visibleHeaders[0];
+          const section = allSections.find(s => strToHtmlId(s.label) === visibleId);
+          if (section) {
+            setActiveSection(section);
           }
         }
       },
       {
-        threshold: 0.5
+        threshold: 0.5,
       }
     );
 
+    // Observe chaque section via son id
     allSections.forEach(section => {
       const safeId = strToHtmlId(section.label);
       const el = document.getElementById(safeId);
@@ -110,7 +111,7 @@ export default function App() {
         <AnimatePresence mode="wait">
           <motion.h1
             key={activeSection.label}
-            className={`${calSans.className} text-white text-7xl md:text-8xl font-bold mb-4 text-center px-8 border-round-3xl mt-0`}
+            className={`${calSans.className} text-white text-center text-7xl md:text-8xl font-bold mb-4 px-2 border-round-3xl mt-0`}
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
@@ -129,7 +130,7 @@ export default function App() {
         />
 
         <div 
-          className="absolute flex flex-column align-items-center"
+          className="hidden flex flex-column align-items-center"
           style={{
             left: '48%',
             bottom: '10%',

@@ -2,6 +2,11 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
+@media (max-width: 768px) {
+  .menubarContainer {
+    display: none;
+  }
+}
 
 /* Menubar de base */
 .menubarContainer :global(.p-menubar) {
