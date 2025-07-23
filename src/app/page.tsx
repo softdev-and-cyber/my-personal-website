@@ -103,7 +103,7 @@ export default function App() {
 
         <div className="relative">
           <p className={`${calSans.className} text-white text-1xl md:text-2xl`}>
-            Software Developer, spe. cybersecurity
+            Software Developer / Cybersecurity Expert
           </p>
         </div>
 

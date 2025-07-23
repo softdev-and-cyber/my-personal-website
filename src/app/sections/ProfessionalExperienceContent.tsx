@@ -33,11 +33,11 @@ export default function ProfessionalExperienceContent() {
                     <ul className="mb-2">
                       <li className="mb-2">
                         Forked and modified an open-source Vue.js/Express.js web app.<br />
-                        📈 Impact: this initiative saved ~0,5 day of work per audit, for 200+ audits/year + automated recurring coordination tasks across three teams.
+                        📈 Details: Specifications, RFI, RFP, programming with Express.js for PoC, etc.
                       </li>
                       <li className="mb-2">
                         Built a Python CLI tool to parse and interpret (AI) security audit reports.<br /> 
-                        📈 Impact: saved 30+ min. of work per report, across ~100 reports per year.
+                        📈 Impact: This tool makes it possible to streamline recurring coordination tasks between three teams & save time during reporting.
                       </li>
                       <li className="mb-2">Deployed a web app. on GCP using GitLab CI/CD, Docker, Kubernetes.</li>
                       <li className="mb-2">Developed an SMS phishing web platform using Python Flask and ADB.</li>
